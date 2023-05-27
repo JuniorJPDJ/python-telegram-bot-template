@@ -3,6 +3,8 @@ import logging
 
 from telethon import TelegramClient
 
+import yaml
+
 def env_constructor(loader, node):
     return os.environ.get(loader.construct_scalar(node), None)
 
