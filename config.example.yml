@@ -1,5 +1,6 @@
 # get it from @BotFather on Telegram
-bot_token: 012345678:0123456789abcdef0123456789abcdef012
+# bot_token: 012345678:0123456789abcdef0123456789abcdef012
+bot_token: !env TG_BOT_TOKEN
 
 telethon_settings:
   # you can add (or remove) any of settings from here:
@@ -13,7 +14,9 @@ telethon_settings:
   
   # get both of them from my.telegram.org
   # more info: https://docs.telethon.dev/en/latest/basic/signing-in.html#signing-in
-  api_id: 123456
-  api_hash: 0123456789abcdef0123456789abcdef
+  # api_id: 123456
+  api_id: !env TG_API_ID
+  # api_hash: 0123456789abcdef0123456789abcdef
+  api_hash: !env TG_API_HASH
 
 log_level: DEBUG
