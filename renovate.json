@@ -5,7 +5,11 @@
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
     "docker:enableMajor",
-    "customManagers:dockerfileVersions"
+    "customManagers:dockerfileVersions",
+    ":disableRateLimiting",
+    ":ignoreUnstable",
+    ":separateMultipleMajorReleases",
+    ":updateNotScheduled"
   ],
   "packageRules": [
     {
