@@ -1,7 +1,7 @@
 FROM        python:3.13.2-alpine@sha256:323a717dc4a010fee21e3f1aac738ee10bb485de4e7593ce242b36ee48d6b352
 
 # renovate: datasource=repology depName=alpine_3_21/gcc versioning=loose
-ARG         GCC_VERSION="13.2.1_git20240309-r0"
+ARG         GCC_VERSION="14.2.0-r4"
 # renovate: datasource=repology depName=alpine_3_21/build-base versioning=loose
 ARG         BUILD_BASE_VERSION="0.5-r3"
 # renovate: datasource=repology depName=alpine_3_21/libffi-dev versioning=loose
