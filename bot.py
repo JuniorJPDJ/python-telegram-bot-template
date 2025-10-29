@@ -29,4 +29,4 @@ if __name__ == '__main__':
     yaml.SafeLoader.add_constructor("!env", env_constructor)
     with open("config.yml", 'r') as f:
         config = yaml.safe_load(f)
-    asyncio.get_event_loop().run_until_complete(main(config))
+    asyncio.run(main(config))
